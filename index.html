@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Tienda Street</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>MI MARCA</h1>
+  <div class="cart-icon" onclick="toggleCart()">
+    🛒 <span id="cart-count">0</span>
+  </div>
+</header>
+
+<section class="hero">
+  <h2>NUEVA COLECCIÓN 2026</h2>
+  <p>Streetwear premium limitado</p>
+  <button>Comprar ahora</button>
+</section>
+
+<section class="products" id="products"></section>
+
+<div class="cart" id="cart">
+  <h2>Carrito</h2>
+  <div id="cart-items"></div>
+  <h3>Total: $<span id="total">0</span></h3>
+  <button onclick="checkout()">Finalizar compra</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+

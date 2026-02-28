@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f0f0f;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: black;
+  position: sticky;
+  top: 0;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.product {
+  background: #1a1a1a;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+button {
+  background: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cart {
+  position: fixed;
+  right: -400px;
+  top: 0;
+  width: 350px;
+  height: 100%;
+  background: #111;
+  padding: 20px;
+  transition: 0.4s;
+}
+
+.cart.active {
+  right: 0;
+}
+
+.hero {
+  height: 80vh;
+  background: url('https://cdn.discordapp.com/attachments/1474925041132241212/1476425943433084989/Screenshot_2.png?ex=69a30e8f&is=69a1bd0f&hm=9fc85da78c810d8fc581e34e65c64cb755b8e1615de420966b3e526a9f7e1baf&') center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+}
+
+.hero h2 {
+  font-size: 50px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 30px;
+  }
+}
